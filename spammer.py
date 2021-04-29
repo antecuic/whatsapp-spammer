@@ -23,7 +23,7 @@ def selectChat(chatName):
     chat = driver.find_element_by_xpath(f"//*[@title='{chatName}']")
     chat.click()
 
-def sendSpam(chatName,message, repeat):
+def sendSpam(chatName, message, repeat):
     selectChat(chatName)
     inputElement = driver.find_element_by_xpath("//*[@id='main']/footer/div[1]/div[2]/div/div[2]")
     for i in range(0, repeat):

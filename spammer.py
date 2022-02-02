@@ -25,10 +25,10 @@ def selectChat(chatName):
 
 def sendSpam(chatName, message, repeat):
     selectChat(chatName)
-    inputElement = driver.find_element_by_xpath("//*[@id='main']/footer/div[1]/div[2]/div/div[2]")
+    inputElement = driver.find_element_by_xpath("/html/body/div[1]/div[1]/div[1]/div[4]/div[1]/footer/div[1]/div/span[2]/div/div[2]/div[1]/div/div[2]")
     for i in range(0, repeat):
         inputElement.send_keys(messageValue)
-        driver.find_element_by_xpath("//*[@id='main']/footer/div[1]/div[3]/button").click()
+        driver.find_element_by_xpath("/html/body/div[1]/div[1]/div[1]/div[4]/div[1]/footer/div[1]/div/span[2]/div/div[2]/div[2]/button").click()
 
 
 while True:
